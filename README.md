@@ -1,3 +1,3 @@
 # Data Structures
 ## Topics
-### Linked Lists
+### * [Linked Lists](https://github.com/MuhammadAmas/Data-Structures/tree/master/Linked%20List)
