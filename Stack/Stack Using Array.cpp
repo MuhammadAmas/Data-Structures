@@ -30,6 +30,7 @@ void pop(){
 int main()
 {
 
+    //Taking the input in the array.
     for (int i = 0; i < sizeOfArray; i++)
     {
         int num;
