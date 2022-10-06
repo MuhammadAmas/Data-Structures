@@ -19,18 +19,20 @@ void push(int x)
     }
 };
 
-void pop(){
+void pop()
+{
     if (top == -1)
     {
         cout << "Error: No element to pop" << endl;
         return;
-    }top--;
+    }
+    top--;
 }
 
 int main()
 {
 
-    //Taking the input in the array.
+    // Taking the input in the array.
     for (int i = 0; i < sizeOfArray; i++)
     {
         int num;
