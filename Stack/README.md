@@ -1,2 +1,2 @@
-## Stack
+# Stack
 ### * Stack using Array.
