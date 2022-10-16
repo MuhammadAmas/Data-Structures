@@ -1,35 +1,44 @@
 #include <iostream>
 using namespace std;
 
-int adjMatrix[5][5];
-
-// For bidirectional graph
-void edges(int x, int y)
+class adjMatrix
 {
-    adjMatrix[x][y] = 1;
-    adjMatrix[y][x] = 1;
-};
+public:
+    int Matrix[5][5];
 
-//Displaying Graph through Matrix
-void printMatrix()
-{
-    for (int i = 0; i < 5; i++)
+    // For bidirectional graph
+    void edges(int x, int y)
     {
-        for (int j = 0; j < 5; j++)
+        Matrix[x][y] = 1;
+        Matrix[y][x] = 1;
+    };
+
+    // Displaying Graph through Matrix
+    void printMatrix()
+    {
+        for (int i = 0; i < 5; i++)
         {
-            cout << adjMatrix[i][j] << " ";
+            for (int j = 0; j < 5; j++)
+            {   
+                if (Matrix[i][j] != 1){
+                    Matrix[i][j] = 0;
+                }
+                cout << Matrix[i][j] << " ";
+            }
+            cout << endl;
         }
-        cout << endl;
-    }
+    };
 };
 
 int main()
 {
-    edges(0, 0);
-    edges(0, 1);
-    edges(1, 0);
-    edges(1, 1);
-    edges(2,4);
-    edges(3,4);
-    printMatrix();
+    adjMatrix obj;
+    obj.edges(0, 0);
+    obj.edges(1, 1);
+    obj.edges(1, 2);
+    obj.edges(3, 4);
+    obj.edges(4, 0);
+    obj.edges(4, 1);
+    obj.edges(4, 4);
+    obj.printMatrix();
 }
