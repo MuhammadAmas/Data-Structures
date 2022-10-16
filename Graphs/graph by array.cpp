@@ -19,8 +19,9 @@ public:
         for (int i = 0; i < 5; i++)
         {
             for (int j = 0; j < 5; j++)
-            {   
-                if (Matrix[i][j] != 1){
+            {
+                if (Matrix[i][j] != 1)
+                {
                     Matrix[i][j] = 0;
                 }
                 cout << Matrix[i][j] << " ";
