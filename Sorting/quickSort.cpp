@@ -28,13 +28,14 @@ void quickSort(int arr[], int l, int r)
     }
 }
 
-void print(int arr[],int n){
+void print(int arr[], int n)
+{
 
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
     }
-    cout<<endl;
+    cout << endl;
 }
 
 int main()
@@ -42,15 +43,15 @@ int main()
 
     int arr[6] = {4, 2, 5, 7, 9, 3};
 
-    int n = sizeof(arr)/sizeof(int);
+    int n = sizeof(arr) / sizeof(int);
 
     cout << "Unsorted Array : ";
-    print(arr,n);
+    print(arr, n);
 
     quickSort(arr, 0, 5);
-    
+
     cout << "Sorted Array : ";
-    print(arr,n);
+    print(arr, n);
 
     return 0;
 };
