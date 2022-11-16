@@ -6,4 +6,6 @@
 ### * [Queue](https://github.com/MuhammadAmas/Data-Structures/tree/master/Queue)
 ### * [Binary Search Tree](https://github.com/MuhammadAmas/Data-Structures/tree/master/Binary%20Search%20Tree)
 ### * [Graphs](https://github.com/MuhammadAmas/Data-Structures/tree/master/Graphs)
+### * [Sorting](https://github.com/MuhammadAmas/Data-Structures/tree/master/Sorting)
+
 
